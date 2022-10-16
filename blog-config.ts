@@ -5,14 +5,14 @@ const config = {
   language: 'ko-KR', // default language
   author: 'gatsby blog starter', // your name
   twitterUsername: '@rheech22', // twitter username
-  siteUrl: 'https://yunhui.github.io/', // site url
+  siteUrl: 'https://dst03106.github.io/', // site url
   themeColor: '#161b22', // theme color for PWA
 
   // google analytics
   googleAnalyticsTrackingId: 'G-0DM3BCWTDS',
 
   // utterance comment
-  commentRepo: 'dst03106/yunhui.github.io', // {github's username}/{repository} - will contain comments
+  commentRepo: 'dst03106/dst03106.github.io', // {github's username}/{repository} - will contain comments
 
   // links - if you don't wanna add any link to your bio, just leave it empty string.
   linkedIn: '',
