@@ -138,6 +138,7 @@
   },
   "active": "c3b4fae8e8172f8a",
   "lastOpenFiles": [
+    "SUMMARY.md",
     "AWS/SendCommand.md",
     "README.md",
     "Start here.md",
@@ -177,7 +178,6 @@
     "How to/Add aliases to note.md",
     "Obsidian/Android app.md",
     "Licenses & add-on services/Obsidian Unlimited.md",
-    "Licenses & add-on services/Obsidian Sync.md",
-    "Licenses & add-on services/Obsidian Publish.md"
+    "Licenses & add-on services/Obsidian Sync.md"
   ]
 }
