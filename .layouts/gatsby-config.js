@@ -1,13 +1,13 @@
 const path = require("path");
 const pathPrefix = "/";
 const siteMetadata = {
-  title: "Welcome to my place!",
+  title: "Obsidian Template for Gatsby Theme Primer Wiki",
   shortName: "Wiki",
   description:
-    "😊",
-  twitterName: "dst03106",
+    "Another Obsidian template that use gatsby-theme-primer-wiki, Welcome to your new Obsidian Knowledge Base!",
+  twitterName: "theowenyoung",
   imageUrl: "/graph-visualisation.jpg",
-  siteUrl: "https://dst03106.github.io/",
+  siteUrl: "https://demo-obsidian.owenyoung.com",
 };
 module.exports = {
   siteMetadata,
@@ -27,19 +27,18 @@ module.exports = {
     {
       resolve: "gatsby-theme-primer-wiki",
       options: {
-        sidebarDepth:0,
         nav: [
           {
             title: "Github",
-            url: "https://dst03106.github.io/",
+            url: "https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki/",
           },
           {
             title: "Twitter",
-            url: "https://twitter.com/dst03106",
+            url: "https://twitter.com/theowenyoung",
           },
         ],
         editUrl:
-          "https://github.com/dst03106/dst03106.github.io/${contentFolder}/",
+          "https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki/tree/main/",
       },
     },
     {

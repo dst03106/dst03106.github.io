@@ -8,17 +8,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
       - name: Setup | Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
           node-version: "14"
 
+      - name: Install latest npm
+        run: npm i -g npm
       - name: Cache node modules
-        uses: actions/cache@v3
+        uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
         with:
@@ -29,9 +30,8 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-
       - name: Install dependencies
-        run: npm i --legacy-peer-deps
+        run: npm i
         working-directory: .layouts
 
       - name: Build Site
