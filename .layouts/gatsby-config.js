@@ -1,5 +1,4 @@
 const path = require("path");
-const pathPrefix = "/";
 const siteMetadata = {
   title: "Obsidian Template for Gatsby Theme Primer Wiki",
   shortName: "Wiki",
@@ -7,11 +6,11 @@ const siteMetadata = {
     "Another Obsidian template that use gatsby-theme-primer-wiki, Welcome to your new Obsidian Knowledge Base!",
   twitterName: "theowenyoung",
   imageUrl: "/graph-visualisation.jpg",
-  siteUrl: "https://demo-obsidian.owenyoung.com",
+  siteUrl: "https://dst03106.github.io",
 };
 module.exports = {
   siteMetadata,
-  pathPrefix,
+  pathPrefix: "/",
   flags: {
     DEV_SSR: true,
   },
@@ -46,7 +45,7 @@ module.exports = {
       options: {
         name: siteMetadata.title,
         short_name: siteMetadata.shortName,
-        start_url: pathPrefix,
+        start_url: "/",
         background_color: `#f7f0eb`,
         display: `standalone`,
         icon: path.resolve(__dirname, "./static/logo.png"),
