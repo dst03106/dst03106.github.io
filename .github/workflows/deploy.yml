@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Install dependencies
-        run: npm i
+        run: npm i --legacy-peer-deps
         working-directory: .layouts
 
       - name: Build Site
