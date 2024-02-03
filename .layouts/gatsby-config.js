@@ -29,15 +29,26 @@ module.exports = {
         nav: [
           {
             title: "Github",
-            url: "https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki/",
-          },
-          {
-            title: "Twitter",
-            url: "https://twitter.com/theowenyoung",
+            url: "https://github.com/dst03106",
           },
         ],
         editUrl:
-          "https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki/tree/main/",
+          "https://github.com/dst03106/dst03106.github.io/",
+        sidebarComponents: ["latest", "tag"],
+        lastUpdatedText: "최근 수정 시각",
+        shouldSupportLatest: true,
+        shouldShowLatestOnIndex: true,
+        defaultIndexLatestPostCount: 10,
+        lastUpdatedTransformer: (isoString) => {
+          const dateObj = new Date(isoString);
+          const date = dateObj.toLocaleString("ko-KR", {
+            day: "numeric",
+            month: "numeric",
+            year: "numeric",
+          });
+          return date;
+        },
+        lastUpdatedText: "Last updated on",
       },
     },
     {
